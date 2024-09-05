@@ -2,13 +2,11 @@
 #include <windows.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctime> // must include this header file to use time function
+#include <ctime> 
 
 using namespace std;
 
-// function to wish user according to time
 void wishme(){
-    // current date  and time based on your system timezone
     time_t now = time(0);
     tm *time = localtime(&now);
 
@@ -49,12 +47,12 @@ int main()
     system("cls");
 
     cout<<"\t\t\t<============================================= W E L C O M E ==========================================>"<<endl;
-    cout<<"\t\t\t<============================================= I'M A VIRTUAL ASSISTANT ==========================================>"<<endl;
-    cout<<"\t\t\t<============================================= MY NAME IS Ritesh Virtual AI ==========================================>"<<endl;
-    cout<<"\t\t\t<============================================= I'M HERE TO HELP YOU ==========================================>"<<endl<<endl;
+    cout<<"\t\t\t<============================================= I'M A VIRTUAL ASSISTANT ================================>"<<endl;
+    cout<<"\t\t\t<============================================= MY NAME IS Ritesh Virtual AI ===========================>"<<endl;
+    cout<<"\t\t\t<============================================= I'M HERE TO HELP YOU ===================================>"<<endl<<endl;
 
-    char password[20]; //to take password
-    char ch[100]; // to take command from the user
+    char password[20]; 
+    char ch[100]; 
 
     do
     {
@@ -122,7 +120,6 @@ int main()
                 }
 
                 else if(strcmp(ch, "time") == 0 || strcmp(ch, "date") == 0){
-                    // make function to show date and time
                     datetime();
                 }
 
@@ -179,7 +176,7 @@ int main()
 
                     cout << "\t\t\t<============================= W E L C O M E=============================>" << endl;
                     cout << "\t\t\t<============================= I'M VIRTUAL ASSISTANT =============================>" << endl;
-                    cout << "\t\t\t<============================= MY NAME IS INERTIA =============================>" << endl;
+                    cout << "\t\t\t<============================= MY NAME IS Ritesh AI =============================>" << endl;
                     cout << "\t\t\t<============================= I'M HERE TO HELP YOU AND MAKE YOUR LIFE EASY =============================>" << endl
                          << endl;
 
